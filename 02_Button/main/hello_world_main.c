@@ -14,7 +14,7 @@ void blink(int duration){
     gpio_set_level(LED, 1);
     vTaskDelay(duration / portTICK_PERIOD_MS);
     gpio_set_level(LED, 0);
-     vTaskDelay(PAUSA_DURATION / portTICK_PERIOD_MS);
+    vTaskDelay(PAUSA_DURATION / portTICK_PERIOD_MS);
 }
 void send_sos()
 {
@@ -29,7 +29,7 @@ void app_main(void)
     gpio_reset_pin(BUTTON);
 
     // Configura el pin del LED como salida
-    gpio_set_direction(LED, GPIO_MODE_OUTPUT);
+    gpio_set_direction(LED, GPIO_MODE_INPUT);
 
     // Configura el pin del botón con resistencia pull-up
     gpio_set_pull_mode(BUTTON, GPIO_PULLUP_ONLY);

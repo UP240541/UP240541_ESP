@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "02_Button",
-    "project_version":    "69a3722-dirty",
+    "project_version":    "be93f00-dirty",
     "project_path":       "D:/UP240541_ESP/UP240541_ESP/02_Button",
     "idf_path":           "C:/Users/efrau/esp/v5.4.2/esp-idf",
     "build_dir":          "D:/UP240541_ESP/UP240541_ESP/02_Button/build",
@@ -1190,12 +1190,12 @@
             "dir": "D:/UP240541_ESP/UP240541_ESP/02_Button/main",
             "type": "LIBRARY",
             "lib": "__idf_main",
-            "reqs": [],
+            "reqs": [ "driver" ],
             "priv_reqs": [ "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "D:/UP240541_ESP/UP240541_ESP/02_Button/build/esp-idf/main/libmain.a",
-            "sources": [ "D:/UP240541_ESP/UP240541_ESP/02_Button/main/hello_world_main.c" ],
+            "sources": [ "D:/UP240541_ESP/UP240541_ESP/02_Button/main/ejercicio_01.c" ],
             "include_dirs": []
         },
         "mbedtls": {
@@ -2841,7 +2841,7 @@
             "prefix": "idf",
             "dir": "D:/UP240541_ESP/UP240541_ESP/02_Button/main",
             "lib": "__idf_main",
-            "reqs": [],
+            "reqs": [ "driver" ],
             "priv_reqs": [ "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
